@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('imagenes/migasof.jpeg'); /* Imagen de fondo */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo */
+    animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+aside {
+    width: 200px;
+    float: left;
+    padding: 20px;
+}
+
+nav button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px; /* Bordes redondeados */
+    width: 100%; /* Botones del mismo tamaño */
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #45a049; /* Color verde más oscuro al pasar el mouse */
+}
+
+main {
+    margin-left: 220px; /* Espacio para el aside */
+    padding: 20px;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los recuadros se distribuyan en varias filas */
+    justify-content: space-between; /* Espacio entre los recuadros */
+}
+
+.info {
+    width: calc(50% - 10px); /* Dos columnas con un pequeño margen */
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con un poco de transparencia */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrar texto */
+}
+
+.info:last-child {
+    width: 100%; /* El último recuadro ocupa todo el ancho */
+    margin: 0 auto; /* Centrar el último recuadro */
+}
+
+footer {
+    clear: both; /* Asegura que el footer esté debajo de todo */
+    background-color: #91b4f7; /* Color de fondo del footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media img {
+    width: 30px; /* Tamaño de los iconos de redes sociales */
+    margin: 0 10px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flag {
+    width: 20px; /* Tamaño de la bandera */
+    margin-right: 5px;
+}
+
+.contact-info span {
+    margin: 5px 0; /* Espaciado entre la información de contacto */
+}
